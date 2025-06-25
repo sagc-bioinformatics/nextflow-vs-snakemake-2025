@@ -31,12 +31,12 @@ Friday, June 27th, 2025
 ![](img/orgs.png)
 
 
-|                     | Instructors                                                               |
-|---------------------|---------------------------------------------------------------------------|
-| ![](/img/john.jpg)  | __John Salamon__<br>Bioinformatician,<br>South Australian Genomics Centre |
-| ![](/img/simon.jpg) | __Simon Lee__<br>Bioinformatician,<br>South Australian Genomics Centre    |
-| ![](/img/mike.jpg)  | __Michael Roach__<br>Senior Research Fellow,<br>Flinders University       |
-| ![](/img/np.jpg)    | __Bhavya Papudeshi__<br>PhD Candidate,<br>Flinders University             |
+|                  | Instructors                                                               |
+|------------------|---------------------------------------------------------------------------|
+| ![](img/john.jpg) | __John Salamon__<br>Bioinformatician,<br>South Australian Genomics Centre |
+| ![](img/simon.jpg) | __Simon Lee__<br>Bioinformatician,<br>South Australian Genomics Centre    |
+| ![](img/mike.jpg) | __Michael Roach__<br>Senior Research Fellow,<br>Flinders University       |
+| ![](img/np.jpg)  | __Bhavya Papudeshi__<br>PhD Candidate,<br>Flinders University             |
 
 
 

@@ -24,8 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is the homepage for our 2025 bioinformatics workflow managers workshop:
   Nextflow versus Snakemake!
 baseurl: "/nextflow-vs-snakemake-2025" # the subpath of your site, e.g. /blog
-#url: "https://sagc-bioinformatics.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://bioinf.cc"
+url: "https://sagc-bioinformatics.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: SA_genomics
 github_username:  sagc-bioinformatics
 
