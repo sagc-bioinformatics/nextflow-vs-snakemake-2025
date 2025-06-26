@@ -35,7 +35,7 @@
   <p class="author">
 John Salamon
   </p>
-  <p class="date">Aug 28, 2024</p>
+  <p class="date">Jun 26, 2025</p>
 </div>
 <div id="a-brief-history-of-nextflow" class="slide section level1">
 <h1>A brief history of Nextflow</h1>
@@ -53,8 +53,8 @@ project</a> led by Phil Ewels is started</li>
 <li>2018: Seqera Labs is launched, which Ziad can tell you more about
 later</li>
 <li>2020: Nextflow DSL2 is released, a major revamp of the language</li>
-<li>2024: As of today, the latest stable release of Nextflow is <a
-href="https://www.nextflow.io/blog/2024/nextflow-2404-highlights.html">24.04</a></li>
+<li>2025: As of today, the latest stable release of Nextflow is <a
+href="https://github.com/nextflow-io/nextflow/releases">25.04</a></li>
 </ul>
 </div>
 </div>
@@ -259,17 +259,30 @@ class="slide section level1">
 <td>More commercial</td>
 <td>More academic</td>
 </tr>
+<tr class="odd">
+<td>Community on</td>
+<td>Slack</td>
+<td>Discord</td>
+</tr>
 </tbody>
 </table>
 </div>
 <div id="paradigms" class="slide section level1">
 <h1>Paradigms</h1>
-<p>Snakemake - makefile style (start by naming outputs) - define
-multiple rules - naming a target then generates your DAG by combining
-rules - your workflow structure is <em>implicit</em></p>
-<p>Nextflow - dataflow programming (start by naming inputs) - define
-multiple processes - join them together in a workflow,
-<em>explicity</em> - You just provide inputs and everything runs</p>
+<ul>
+<li>Snakemake - makefile style (start by naming outputs)
+<ul>
+<li>define multiple rules</li>
+<li>naming a target then generates your DAG by combining rules</li>
+<li>your workflow structure is <em>implicit</em></li>
+</ul></li>
+<li>Nextflow - dataflow programming (start by naming inputs)
+<ul>
+<li>define multiple processes</li>
+<li>join them together in a workflow, <em>explicity</em></li>
+<li>You just provide inputs and everything runs</li>
+</ul></li>
+</ul>
 </div>
 <div id="nf-core" class="slide section level1">
 <h1>nf-core</h1>

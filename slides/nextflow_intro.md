@@ -1,6 +1,6 @@
 % Nextflow Introduction
 % John Salamon
-% Aug 28, 2024
+% Jun 26, 2025
 
 
 # A brief history of Nextflow
@@ -11,13 +11,13 @@
 - 2018: The [nf-core community project][2] led by Phil Ewels is started
 - 2018: Seqera Labs is launched, which Ziad can tell you more about later
 - 2020: Nextflow DSL2 is released, a major revamp of the language
-- 2024: As of today, the latest stable release of Nextflow is [24.04][3]
+- 2025: As of today, the latest stable release of Nextflow is [25.04][3]
 :::
 
 [0]: https://elifesciences.org/labs/d193babe/the-story-of-nextflow-building-a-modern-pipeline-orchestrator
 [1]: https://www.nature.com/articles/nbt.3820
 [2]: https://nf-co.re/about#history-of-nf-core
-[3]: https://www.nextflow.io/blog/2024/nextflow-2404-highlights.html
+[3]: https://github.com/nextflow-io/nextflow/releases
 
 
 # Problems Nextflow aims to solve
