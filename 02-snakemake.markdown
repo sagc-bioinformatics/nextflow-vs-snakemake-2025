@@ -939,16 +939,24 @@ Lambda functions are preferable anywhere you need a function that won't be used 
 
 
 
-## Resources
+## Resources and Profiles
 
 If you're running your Snakemake pipeline on an HPC cluster 
-you're going to want to use a Snakemake profile to manage job resources.
+you're going to want to use a global Snakemake profile to manage job resources.
+It's important to note that you can configure both __global__ profiles and __workflow__ profiles.
+
+[https://snakemake.readthedocs.io/en/stable/executing/cli.html#profiles](https://snakemake.readthedocs.io/en/stable/executing/cli.html#profiles)
+
+From the documentation:
+
+_A global profile that is defined in a system-wide or user-specific configuration directory (on Linux, this will be `$HOME/.config/snakemake` and `/etc/xdg/snakemake`, you can find the answer for your system via `snakemake --help`)._
+
+_A workflow specific profile (introduced in Snakemake 7.29) that is defined via a flag (`--workflow-profile`) or searched in a default location (`profiles/default`) in the working directory or next to the Snakefile._
+
 Resources can be anything, but typically you would define threads, memory, and runtime.
 Resources for each rule are defined under 'Resources:' and 
 Snakemake will manage your jobs according to any defaults that you pass on the command line or 
 in your profile.
-[Resources and profiles are discussed in depth in a previous blog post](https://fame.flinders.edu.au/blog/2021/08/02/snakemake-profiles-updated)
-so I wont go into too much detail here.
 
 Let's define some resources for our mapping rule, which often can consume lots of memory and
 take a long time to complete.
@@ -1006,8 +1014,28 @@ rule convert_sam:
         """
 ```
 
+__HPC schedulers__
 
+Lastly, you can configure Snakemake to submit jobs to your HPC scheduler (e.g. Slurm, PBS) on your behalf. You'll need to install the necessary plugin on your system [from the available catalogue](https://snakemake.github.io/snakemake-plugin-catalog/index.html). e.g. for the [slurm plugin](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/slurm.html):
 
+```bash
+pip install snakemake-executor-plugin-slurm
+```
+
+Specify the slurm executor on the command line:
+
+```bash
+snakemake --executor slurm --default-resources --jobs N ...
+```
+
+or in the profile:
+
+```yaml
+executor: slurm
+default_resources: []
+jobs: 100
+...
+```
 
 ## Misc tweaks
 
@@ -1021,7 +1049,7 @@ like so:
 # Snakefile
 from snakemake.utils import min_version
 
-min_version("6.10.0")
+min_version("8.0.0")
 ```
 
 __Benchmarking__
