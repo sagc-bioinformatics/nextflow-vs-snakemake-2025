@@ -9,7 +9,7 @@
 - 2013: Nextflow, created by Paolo Di Tommaso, is publicly released [(article on history)][0]
 - 2017: Article published in Nature Biotechnology [(Di Tommaso *et al* 2017)][1]
 - 2018: The [nf-core community project][2] led by Phil Ewels is started
-- 2018: Seqera Labs is launched, which Ziad can tell you more about later
+- 2018: Seqera Labs is launched, a commercial entity backing Nextflow
 - 2020: Nextflow DSL2 is released, a major revamp of the language
 - 2025: As of today, the latest stable release of Nextflow is [25.04][3]
 :::
